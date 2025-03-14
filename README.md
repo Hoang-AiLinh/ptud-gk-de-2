@@ -46,5 +46,3 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-
-## 4. Liên Kết Dự Án
