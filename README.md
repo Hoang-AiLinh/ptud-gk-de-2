@@ -11,6 +11,7 @@
 - 📝 **Đăng ký và đăng nhập**
 - ✅ **Theo dõi trạng thái công việc**: Đã hoàn thành, Đang thực hiện, Trễ hạn
 - 📅 **Thống kê mô tả** công việc
+- 🚀 **Quản lý phân loại công việc
 - 🖼 **Upload avatar cho người dùng**
 - 🔔 **Hiển thị cảnh báo số công việc trễ hạn** (Option 1) 
 - 🎨 **Giao diện:** Layout **Single Column** 
