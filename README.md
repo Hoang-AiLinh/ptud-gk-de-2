@@ -9,7 +9,6 @@
 
 ### Tính năng chính:
 - 📝 **Đăng ký và đăng nhập**
-- 📂 **Quản lý công việc**: tạo, cập nhật, xóa
 - ✅ **Theo dõi trạng thái công việc**: Đã hoàn thành, Đang thực hiện, Trễ hạn
 - 📅 **Thống kê mô tả** công việc
 - 🖼 **Upload avatar cho người dùng**
