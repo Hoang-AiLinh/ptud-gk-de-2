@@ -1,0 +1,21 @@
+{% extends 'layout.html' %} {% block title %}Thêm Công Việc{% endblock %} {%
+block content %}
+<h1>Thêm Công Việc Mới</h1>
+<form method="POST">
+  <div class="form-group">
+    <label for="title">Tiêu Đề:</label>
+    <input type="text" id="title" name="title" required />
+  </div>
+  <div class="form-group">
+    <label for="category">Danh Mục:</label>
+    <select id="category" name="category_id">
+      <option value="">-- Chọn Danh Mục --</option>
+      {% for category in categories %}
+      <option value="{{ category.id }}">{{ category.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <button type="submit" class="btn">Lưu Công Việc</button>
+</form>
+<a href="{{ url_for('dashboard') }}">Quay lại bảng điều khiển</a>
+{% endblock %}

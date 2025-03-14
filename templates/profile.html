@@ -1,0 +1,51 @@
+{% extends 'layout.html' %} {% block title %}Hồ Sơ Người Dùng{% endblock %} {%
+block content %}
+<h1>Hồ Sơ Người Dùng</h1>
+
+<div class="profile-container">
+  <div>
+    {% if current_user.avatar_bit %}
+    <img
+      src="data:image/png;base64,{{ current_user.avatar_bit | b64encode }}"
+      alt="Avatar"
+      class="avatar"
+    />
+    {% else %}
+    <img
+      src="{{ url_for('static', filename=current_user.avatar) }}"
+      alt="Avatar"
+      class="avatar"
+    />
+    {% endif %}
+  </div>
+  <div class="profile-info">
+    <h2>{{ current_user.username }}</h2>
+  </div>
+</div>
+
+<div class="avatar-upload">
+  <h3>Cập nhật ảnh đại diện</h3>
+  <form method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="avatar_bit">Chọn ảnh mới (dạng bit):</label>
+      <input
+        type="file"
+        id="avatar_bit"
+        name="avatar_bit"
+        accept="image/*"
+        required
+      />
+      <p class="form-help">
+        Định dạng hỗ trợ: JPG, JPEG, PNG, GIF (tối đa 5MB)
+      </p>
+    </div>
+    <button type="submit" class="btn">Cập nhật ảnh đại diện</button>
+  </form>
+</div>
+
+<div class="actions">
+  <a href="{{ url_for('dashboard') }}" class="btn btn-secondary"
+    >Quay lại bảng điều khiển</a
+  >
+</div>
+{% endblock %}

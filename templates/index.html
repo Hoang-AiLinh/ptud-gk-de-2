@@ -1,0 +1,11 @@
+{% extends 'layout.html' %} {% block title %}Trang Chủ{% endblock %} {% block
+content %}
+<h1>Chào mừng đến với Ứng dụng Quản lý Công việc</h1>
+<p>
+  Ứng dụng giúp bạn theo dõi và quản lý công việc của mình một cách hiệu quả.
+</p>
+<div class="auth-buttons">
+  <a href="{{ url_for('login') }}" class="btn btn-primary">Đăng nhập</a>
+  <a href="{{ url_for('register') }}" class="btn btn-secondary">Đăng ký</a>
+</div>
+{% endblock %}

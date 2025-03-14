@@ -1,0 +1,37 @@
+{% extends 'layout.html' %} {% block title %}Danh Mục Công Việc{% endblock %} {%
+block content %}
+<h1>Quản Lý Danh Mục</h1>
+<a href="{{ url_for('add_category') }}" class="btn">Thêm Danh Mục Mới</a>
+
+<div class="category-list">
+  {% if categories %}
+  <table>
+    <thead>
+      <tr>
+        <th>Tên Danh Mục</th>
+        <th>Số Lượng Công Việc</th>
+        <th>Thao Tác</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for category in categories %}
+      <tr>
+        <td>{{ category.name }}</td>
+        <td>{{ category.tasks|length }}</td>
+        <td>
+          <a href="{{ url_for('edit_category', id=category.id) }}">Sửa</a>
+          <a
+            href="{{ url_for('delete_category', id=category.id) }}"
+            onclick="return confirm('Bạn có chắc muốn xóa danh mục này?')"
+            >Xóa</a
+          >
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>Chưa có danh mục nào được tạo.</p>
+  {% endif %}
+</div>
+{% endblock %}

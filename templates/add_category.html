@@ -1,0 +1,12 @@
+{% extends 'layout.html' %} {% block title %}Thêm Danh Mục{% endblock %} {%
+block content %}
+<h1>Thêm Danh Mục Mới</h1>
+<form method="POST">
+  <div class="form-group">
+    <label for="name">Tên Danh Mục:</label>
+    <input type="text" id="name" name="name" required />
+  </div>
+  <button type="submit" class="btn">Lưu Danh Mục</button>
+</form>
+<a href="{{ url_for('categories') }}">Quay lại danh sách</a>
+{% endblock %}
