@@ -44,8 +44,10 @@ pip install -r requirements.txt
 ```
 
 #### 📁 Thư mục `libs`
+```bash
 Thư mục `libs` chứa các thư viện cần thiết cho dự án, bao gồm các dependency bên ngoài như Flask, SQLAlchemy, và các thư viện hỗ trợ khác.  
 Nó giúp đảm bảo mã nguồn hoạt động mà không cần cài đặt các thư viện từ internet mỗi lần chạy dự án.
+```
 
 #### 🚀 Chạy ứng dụng Flask
 ```bash
