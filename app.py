@@ -6,6 +6,9 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 import base64
+import sys
+
+sys.path.insert(0, 'libs')
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
