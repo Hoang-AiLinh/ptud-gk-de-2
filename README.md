@@ -14,7 +14,7 @@
 - 🚀 Quản lý phân loại công việc
 - 🖼  Upload avatar cho người dùng
 - 🔔 Hiển thị cảnh báo số công việc trễ hạn (Option 1) 
-- 🎨 Giao diện:** Layout **Single Column** 
+- 🎨 Giao diện: Layout **Single Column** 
 
 ## 3. Hướng Dẫn Cài Đặt & Chạy Dự Án
 
